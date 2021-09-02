@@ -3,11 +3,13 @@ package io.faizanuddin.ipldashboard.controller;
 import io.faizanuddin.ipldashboard.model.Team;
 import io.faizanuddin.ipldashboard.repository.MatchRepository;
 import io.faizanuddin.ipldashboard.repository.TeamRepository;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@CrossOrigin
 public class TeamController {
 
 
