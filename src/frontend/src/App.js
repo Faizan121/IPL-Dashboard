@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import React from 'react'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import { TeamPage } from './pages/TeamPage';
@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <Router>
       <Switch>
-      <Route path="/teams/:teamName/matches">
+      <Route path="/teams/:teamName/matches/:year">
           <MatchPage/>
       </Route>  
       <Route path="/teams/:teamName">
